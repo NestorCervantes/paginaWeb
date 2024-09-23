@@ -1,0 +1,73 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #85C1E9 50%, #58D68D 50%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor de la página */
+.container {
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* Estilos de los botones */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    background-color: #FFD700; /* Color dorado oscuro */
+    background-image: linear-gradient(145deg, #FFD700, #FFC300); /* Gradiente */
+    color: black; /* Color del texto */
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+button:hover {
+    background-color: #FFC300; /* Color dorado más claro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+button:active {
+    background-color: #FFA500; /* Color anaranjado más oscuro al hacer clic */
+    transform: translateY(2px); /* Efecto de hundimiento */
+}
+
+button i {
+    margin-right: 8px; /* Espacio entre icono y texto */
+}
+
+/* Estilos para los iconos */
+.icon-humedad::before {
+    content: '💧'; /* Ícono de gota */
+}
+
+.icon-altitud::before {
+    content: '⛰️'; /* Ícono de montaña */
+}
+
+.icon-temperatura::before {
+    content: '🌡️'; /* Ícono de termómetro */
+}
+
+.icon-presion::before {
+    content: '📏'; /* Ícono de manómetro */
+}
